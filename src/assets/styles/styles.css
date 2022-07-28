@@ -3,7 +3,7 @@
   --pale-blue: hsl(225, 100%, 94%);
   --desaturated-blue: hsl(224, 23%, 55%);
   --bright-blue: hsl(245, 75%, 52%);
-  --dark-blue: hsl(223, 47%, 23%);
+  --navy-blue: hsl(223, 47%, 23%);
 }
 
 * {
@@ -16,6 +16,7 @@ body {
   height: 900px;
   width: 1440px;
   margin: 0 auto;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .container {
@@ -27,7 +28,7 @@ body {
   background: url(../images/pattern-background-desktop.svg) no-repeat var(--pale-blue);
 }
 
-.container__card {
+.card-component {
   width: 410px;
   height: 630px;
   background-color: white;
@@ -35,10 +36,40 @@ body {
   box-shadow: 0 3px 15px -5px var(--desaturated-blue);
 }
 
-.container__banner {
+.card-component__banner {
   border-radius: 8px 8px 0 0;
   height: 200px;
   background: url(../images/illustration-hero.svg) no-repeat;
+}
+
+.card-component__text-container {
+  display: flex;
+  justify-content: center;
+}
+
+.paragraph {
+  font-size: 16px;
+}
+.paragraph-medium {
+  font-weight: 500;
+}
+.paragraph-bold {
+  font-weight: 700;
+}
+.paragraph-black {
+  font-weight: 900;
+}
+
+.navy {
+  color: var(--navy-blue);
+}
+
+.desaturated {
+  color: var(--desaturated-blue);
+}
+
+.pale {
+  color: var(--pale-blue);
 }
 
 /*# sourceMappingURL=styles.css.map */
