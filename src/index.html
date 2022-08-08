@@ -5,7 +5,7 @@
     <title>Order Card Component</title>
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Red+Hat+Display"
+      href="https://fonts.googleapis.com/css?family=Red+Hat+Display:500,700,900"
     />
     <link rel="stylesheet" href="./assets/styles/styles.css" />
   </head>
@@ -14,7 +14,30 @@
     <div class="container">
       <div class="card-component">
         <div class="card-component__banner"></div>
-        <div class="card-component__text-container"></div>
+        <div class="card-component__text-container">
+          <h2 class="header-bold navy">Order Summary</h2>
+          <p class="paragraph-medium desaturated">You can now listen to millions of songs, audiobooks and podcasts on any device anywhere you like!</h1>
+          <!-- Plan Card -->
+          <div class="card-component__plan">
+            <div>
+              <img src="./assets/images/icon-music.svg" alt="">
+            </div>
+            <div>
+              <p class="paragraph-black navy">Annual Plan</p>
+              <p class="paragraph-medium desaturated">$59.99/year</p>
+            </div>
+            <div>
+              <a href="#">Change</a>
+            </div>
+          </div>
+           <!-- Buttons -->
+          <div class="card-component__button-primary">
+            Proceed to Payment
+          </div>
+          <div class="card-component__button-secondary">
+            Cancel Order
+          </div>
+        </div>
       </div>
     </div>
   </body>

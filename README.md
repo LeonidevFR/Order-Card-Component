@@ -1,6 +1,6 @@
 # Order-Card-Component
 
-A nice order card page made with HTML and CSS
+A simple order card page made with HTML and SCSS.
 
 # Run SASS preprocessor
 

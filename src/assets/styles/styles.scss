@@ -30,7 +30,7 @@ body {
 }
 
 .card-component {
-  width: 410px;
+  width: 450px;
   height: 630px;
   background-color: white;
   border-radius: 8px;
@@ -44,12 +44,81 @@ body {
 }
 
 .card-component__text-container {
+  width: 80%;
+  margin: 0 auto;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card-component__plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: start;
+  width: 100%;
+  height: 100px;
+  border-radius: 8px;
+  background-color: var(--very-pale-blue);
+}
+
+.card-component__button-primary {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  color: var(--very-pale-blue);
+  font-size: 16px;
+  font-weight: 700;
+  background-color: var(--bright-blue);
+  cursor: pointer;
+  box-shadow: 5px 5px 10px var(--pale-blue);
+
+  &:hover {
+    opacity: 0.85;
+  }
+}
+
+.card-component__button-secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  color: var(--desaturated-blue);
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #fff;
+  cursor: pointer;
+
+  &:hover {
+    outline: 2px solid var(--bright-blue);
+    color: var(--bright-blue);
+  }
 }
 
 .paragraph {
   font-size: 16px;
+
+  &-medium {
+    font-weight: 500;
+  }
+  &-bold {
+    font-weight: 700;
+  }
+  &-black {
+    font-weight: 900;
+  }
+}
+
+.header {
+  font-size: 22px;
 
   &-medium {
     font-weight: 500;
